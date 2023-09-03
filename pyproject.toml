@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "blockchain-ui-tests"
+version = "0.1.0"
+description = "Dependencies for the project"
+authors = ["Prateek Mishra"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pytest = "^7.4.1"
+selenium = "3.141"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
