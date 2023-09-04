@@ -1,5 +1,15 @@
 import pytest
+import logging
 from pages.transaction_page import TransactionPage
+
+def configure_logging():
+    logging.basicConfig(
+        filename="test.log",
+        level=logging.INFO,
+        format="%(asctime)s:%(levelname)s:%(message)s"
+    )
+
+configure_logging()
 
 BASE_URL = "https://blockstream.info/block/000000000000000000076c036ff5119e5a5a74df77abf64203473364509f7732"
 
@@ -22,4 +32,4 @@ def test_find_and_print_hash(driver):
         if get_hash_value:
             hash_values.append(get_hash_value)
     for value in hash_values:
-        print(value)
+        logging.info(value)

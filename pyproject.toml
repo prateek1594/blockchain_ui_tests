@@ -6,9 +6,11 @@ authors = ["Prateek Mishra"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.9"
+python = "^3.8"
 pytest = "^7.4.1"
-selenium = "3.141"
+selenium = "4.9.0"
+webdriver-manager = "^4.0.0"
+urllib3 = "1.26"
 
 
 [build-system]
