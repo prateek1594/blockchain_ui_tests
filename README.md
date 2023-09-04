@@ -7,6 +7,7 @@ This readme explains the installation and usgae of the UI testing framework deve
 - [Introduction](#markdown-header-introduction)
 - [Installation](#markdown-header-installation)
 - [Usage](#markdown-header-usage)
+- [Results](#markdown-header-results)
 
 ## Introduction
 
@@ -50,3 +51,13 @@ If you want to run your tests using command line, please use the following comma
     Run : poetry run pytest
 ```
 The above will collect all the tests and runs them. 
+
+## Results
+
+TC01 : Navigate to the URl and check that header should contain text: 25 of 2875 Transactions
+
+![TC01_result](resources/TC01.png)
+
+TC02 : For all the 25 Transactions, print hash of all those having exactly 1 input and 2 output
+
+![TC02_result](resources/TC02.png)
